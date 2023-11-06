@@ -2,6 +2,9 @@ let encender = ""
 let myImage: Image = null
 let imaAP: Image = null
 let serial1 = ""
+bluetooth.onBluetoothConnected(function () {
+    images.iconImage(IconNames.Yes).showImage(0)
+})
 basic.forever(function () {
     encender = "encender"
     myImage = images.iconImage(IconNames.Heart)
